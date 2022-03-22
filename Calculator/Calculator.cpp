@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-int do_arithmetics(const int& first_digit, const char& arithmetic_operation, const int& second_digit, int& result_digit) {
+int do_arithmetics(const double& first_digit, const char& arithmetic_operation, const double& second_digit, double& result_digit) {
     switch (arithmetic_operation) {
         case('+'): {
             result_digit = first_digit + second_digit;
@@ -30,9 +30,9 @@ int do_arithmetics(const int& first_digit, const char& arithmetic_operation, con
 int main()
 {
     
-    int first_digit{};
-    int second_digit{};
-    int result_digit{};
+    double first_digit{};
+    double second_digit{};
+    double result_digit{};
     char arithmetic_operation{};
     std::cin >> first_digit;
     std::cin >> arithmetic_operation;
